@@ -5364,16 +5364,9 @@ Stack<char> si(40); // 创建一个字符型栈；
 Stack stack(100);   // error, 未指定模板参数，
 ```
 
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="/assets/img/CPlusPlus/image-20210710230546112.png">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">类模板与类的实例化</div>
-</center>
+![](/assets/img/CPlusPlus/image-20210710230546112.png)
+_类模板实例化_
+
 **完整的`Stack<T>`程序**
 
 ```cpp
@@ -5968,7 +5961,7 @@ int main()
 
 ### 8.8.2. 通过模板构造容器
 
-说明如何通过模板获得类型安全性检查（参见[8.7.](##8.7. 类型安全的通用模板类)）
+说明如何通过模板获得类型安全性检查 (参见 8.7)
 
 ### 8.8.3 迭代器
 
