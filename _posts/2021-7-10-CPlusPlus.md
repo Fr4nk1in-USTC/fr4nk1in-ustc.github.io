@@ -45,19 +45,19 @@ toc: true
     - 定义在后，调用在前，调用前必须声明
   - ``<类型> <函数名>(<参数表>);``
 
-  ```cpp
-  int add(int, int);	//函数的声明
-  int main()
-  { 
-  	int i = 10, j = 20;
-      …;
-      j = add(i, j);
-      …;
-  }
-  int add(int a, int b){   
-      return(a + b);
-  }
-  ```
+```cpp
+int add(int, int);	//函数的声明
+int main()
+{ 
+	int i = 10, j = 20;
+    // ....;
+    j = add(i, j);
+    // ....;
+}
+int add(int a, int b){   
+    return(a + b);
+}
+```
 
 ## 1.2. 函数的调用与参数传递
 
@@ -262,8 +262,8 @@ int main()
 ```cpp
 type fun(arg_list)
 {
-	statements;
-	return <expression>;
+    statements;
+return <expression>;
 }
 ```
 
@@ -292,7 +292,7 @@ type fun(arg_list)
 int x;
 int main()
 {
-	int a;
+    int a;
     {
         int a;
         a = 10;
@@ -628,7 +628,7 @@ int main()
 - 函数的参数既可以在定义又可以在声明中指明，<u>一旦定义了缺省参数，就不能再定义它</u>，但可以添加一个或多个缺省参数。
 
   ```cpp
-  void f (int a, int b, int c =0);	// 定义缺省参数c 
+  void f(int a, int b, int c =0);	// 定义缺省参数c 
   void f(int a, int b=1, int c=0);	// 增加缺省参数b
   void f(int a, int b=2, int c=1);	// 错误，企图重定义b和c的缺省参数   
   ```
@@ -649,7 +649,7 @@ int main()
   
   // 调用时必须为占位符参数提供一个值
   f(1); 
-  f(1,2,3.0)；
+  f(1,2,3.0);
   ```
 
 - 优点：增强代码的可维护性
@@ -705,7 +705,7 @@ int main()
 - 由于是静态关联，编译器怎么确定应执行哪一个函数。 
 
 - ```cpp
-  c = max(a, b)；
+  c = max(a, b);
   d = max(a, b, c);
   ```
 
@@ -2816,8 +2816,8 @@ test.c:4:17: error: size of array 'buf' is not an integral constant-expression
    char str[bufsize]; 
    
    // 宏替换
-   #define BUFSIZE 100； // 宏替换
-   char str[BUFSIZE]；
+   #define BUFSIZE 100; // 宏替换
+   char str[BUFSIZE];
    ```
 
    - :tired_face: 在宏替换中，BUFSIZE没有类型信息，不能进行类型检查；
@@ -5913,7 +5913,7 @@ int main()
        }
        T *get()
        {
-           return (T *)slist_base::get() ；
+           return (T *)slist_base::get() ;
        }
        // …
    };
