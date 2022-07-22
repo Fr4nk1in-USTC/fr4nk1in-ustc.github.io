@@ -152,7 +152,7 @@ SortJavaStaticImport: Before
 ```
 
 # 示例
-```c
+```cpp
 #include <algorithm>
 #include <cstdlib>
 #include <ctime>
