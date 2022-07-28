@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /norobots/
+
+Sitemap: https://fr4nk1in-ustc.github.io/sitemap.xml
